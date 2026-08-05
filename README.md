@@ -1,9 +1,6 @@
-# learning-portfolio
-Repository for documenting my internship assessments, projects, and continuous learning.
-
 # Learning Portfolio
 
-This repository documents my internship learning journey, including assessments, lab exercises, and projects completed throughout the internship. Each week contains tasks designed to strengthen Python programming skills, software development practices, and version control using Git and GitHub.
+This repository documents my internship at VCreaTek learning journey, including assessments, lab exercises, and projects completed throughout the internship. Each week contains tasks designed to strengthen Python programming skills, software development practices, and version control using Git and GitHub.
 
 
 ### Week 1 Foundations
