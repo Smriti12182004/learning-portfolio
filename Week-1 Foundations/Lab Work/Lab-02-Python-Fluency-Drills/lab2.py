@@ -37,11 +37,6 @@ def flatten_loop(list_of_lists):
 #Flattens a nested list using list comprehension
 def flatten_comprehension(list_of_lists):
     return [item for sublist in list_of_lists for item in sublist]
-# Difference between List Comprehension and Generator Expression:
-# 1. List comprehension creates the whole list within the memory instantly.
-# 2. Generator expression produces one item at a time, which makes it more memory efficient.
-# 3. A generator is better when we work with large data sets or when the values are processed one by one.
-
 
 # Mean of numbers in a file: Reads numbers from a text file and returns their mean.
 # Invalid lines are skipped and missing files are handled.
