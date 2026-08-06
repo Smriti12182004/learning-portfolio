@@ -26,6 +26,18 @@ def word_count_counter(text):
 
     return dict(Counter(words))
 
+# Flattens a nested list using the list comprehension
+def flatten_loop(list_of_lists):
+    flat_list = []
+    for sublist in list_of_lists:
+        for item in  sublist:
+            flat_list.append(item)
+    return flat_list
+
+#Flattens a nested list using list comprehension
+def flatten_comprehension(list_of_lists):
+    return [item for sublist in list_of_lists for item in sublist]
+
 # test code for testing all functions and print the outputs
 if __name__ == "__main__":
     text="Hello hello world, welcome to Python World!"
@@ -34,3 +46,11 @@ if __name__ == "__main__":
 
     print("\n Counter Count: ")
     print(word_count_counter(text))
+
+    print("\n Do both methods give same output? ")
+    print(word_count(text)==word_count_counter(text))
+
+    nested = [[1,2], [3,4], [5,6]]
+
+    print("\n Flatten using loop: ")
+    print(flatten_loop(nested))
