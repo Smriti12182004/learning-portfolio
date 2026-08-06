@@ -38,6 +38,27 @@ def flatten_loop(list_of_lists):
 def flatten_comprehension(list_of_lists):
     return [item for sublist in list_of_lists for item in sublist]
 
+
+# Mean of numbers in a file: Reads numbers from a text file and returns their mean.
+# Invalid lines are skipped and missing files are handled.
+def mean_of_file(path):
+    numbers = []
+
+    try:
+        with open(path, "r") as file:
+            for line in file:
+             try:
+                numbers.append(float(line.strip()))
+             except ValueError:
+                continue
+
+        if not numbers:
+            return "No valid numbbers found."
+        return sum(numbers)/len(numbers)
+
+    except FileNotFoundError:
+        return f"Error: File '{path}' not found"
+
 # test code for testing all functions and print the outputs
 if __name__ == "__main__":
     text="Hello hello world, welcome to Python World!"
@@ -54,3 +75,9 @@ if __name__ == "__main__":
 
     print("\n Flatten using loop: ")
     print(flatten_loop(nested))
+
+    print("\n Mean of numbers.txt: ")
+    print(mean_of_file("numbers.txt"))
+
+    print("\n Testing the missing file: ")
+    print(mean_of_file("missing.txt"))
