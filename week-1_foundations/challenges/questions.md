@@ -1,0 +1,2 @@
+1. While performing SQL analysis on the Chinook database, how can we identify whether a query is efficient or needs optimization?
+2. What are the important edge cases that should be considered while building a generic CSV profiling tool?
