@@ -156,6 +156,49 @@ Improve Python programming fluency by implementing reusable functions and practi
 
 ---
 
+# Weekly Challenge – CSV Profiling Tool & SQL Analysis
+
+**Status:** Completed
+
+## Objective
+
+- Build a command-line CSV profiling tool using Python.
+- Analyze CSV datasets to understand structure, data types, and data quality.
+- Perform SQL-based analysis using the Chinook database to extract meaningful insights.
+
+---
+
+## Completed Tasks
+
+### Part A – CSV Profiling Tool (`csvstat`)
+
+- Developed a command-line CSV profiling tool using Python.
+- Accepted CSV file paths as command-line input.
+- Analyzed CSV files to extract:
+  - Number of rows and columns.
+  - Column names.
+  - Data types.
+  - Missing value statistics.
+  - Numeric column statistics.
+  - Top value frequency analysis.
+- Generated profiling outputs and documented results with screenshots.
+
+### Part B – SQL Analysis
+
+- Performed SQL analysis using the Chinook SQLite database.
+- Wrote SQL queries to answer analytical questions.
+- Extracted insights using filtering, aggregation, grouping, and sorting.
+
+### SQL Queries Implemented
+
+- Top customers analysis.
+- Revenue analysis by country.
+- Best-selling tracks analysis.
+- Monthly revenue analysis.
+
+---
+
+
 # Repository Structure
 
 ```text
@@ -164,31 +207,57 @@ learning-portfolio/
 ├── README.md
 ├── .gitignore
 │
-└── Week-1 Foundations/
-    │
-    ├── Assessment Work/
-    │   └── Assessment-0-Python-Version-Comparison/
-    │
-    └── Lab Work/
-        │
-        ├── Lab-01-Project-and-Environment-Setup/
-        │
-        ├── Lab-02-Python-Fluency-Drills/
-        │
-        ├── Lab-03-Github-and-Github-Workflow/
-        │
-        ├── Lab-04-Command-Line-and-Bash/
-        │
-        └── Lab-05-SQL-Fundamentals/
-            ├── README.md
-            ├── Chinook_Sqlite.sqlite
-            │
-            ├── sql/
-            │   ├── 01_customer_by_country.sql
-            │   ├── 02_most_expensive_tracks.sql
-            │   ├── 03_revenue_by_country.sql
-            │   ├── 04_best_selling_tracks.sql
-            │   └── 05_monthly_revenue_2021.sql
+└── week-1_foundations/
+│
+├── assessment_work/
+│ └── assessment-0-python-version-comparison/
+│
+├── lab_work/
+│ │
+│ ├── lab-01-project-and-environment-setup/
+│ │
+│ ├── lab-02-python-fluency-drills/
+│ │
+│ ├── lab-03-github-and-github-workflow/
+│ │
+│ ├── lab-04-command-line-and-bash/
+│ │
+│ └── lab-05-sql-fundamentals/
+│ ├── README.md
+│ ├── Chinook_Sqlite.sqlite
+│ ├── screenshots/
+│ └── sql/
+│
+└── challenges/
+│
+├── README.md
+├── challenges_faced.md
+├── csvstat.py
+├── learnings.md
+├── questions.md
+├── samples/
+│ └── example.csv
+│
+├── screenshots/
+│ ├── part-a/
+│ │ ├── 1.1_row_column_count.png
+│ │ ├── 1.2_columns.png
+│ │ ├── 1.3_datatype_check.png
+│ │ ├── 1.4_datatype_check.png
+│ │ ├── 1.5_numeric_stats.png
+│ │ └── 1.6_top_value_frequency.png
+│ │
+│ └── part-b/
+│ ├── 2.1_sql_top_customers.png
+│ ├── 2.2_revenue_by_country.png
+│ ├── 2.3_best_selling_tracks.png
+│ └── 2.4_monthly_revenue.png
+│
+└── sql/
+├── top_customers.sql
+├── revenue_by_country.sql
+├── best_selling_tracks.sql
+└── monthly_revenue.sql
             
 ```
 
@@ -248,9 +317,16 @@ Through these assessments and labs, I gained practical experience in:
 - Resolving merge conflicts and synchronizing branches.
 - Organizing projects using Git and GitHub.
 - Documenting technical work using Markdown.
+- Building command-line data profiling tools using Python.
+- Performing exploratory data analysis on CSV datasets.
+- Understanding data quality checks and profiling techniques.
+- Writing analytical SQL queries for extracting business insights.
+- Combining Python scripting and SQL analysis for practical data workflows.
 
 ---
 
 # Conclusion
 
-The completed assessments and labs provided practical experience across Python programming, Linux command-line operations, Bash scripting, SQL fundamentals, and Git/GitHub workflows. The portfolio demonstrates the ability to apply these concepts through structured exercises, document technical work, and maintain projects using professional development practices.
+The completed assessments, labs, and weekly challenge provided practical experience across Python programming, Linux command-line operations, Bash scripting, SQL fundamentals, data profiling, and Git/GitHub workflows.
+
+The portfolio demonstrates the ability to apply programming and data analysis concepts through structured exercises, build command-line tools, perform SQL-based analysis, document technical work, and maintain projects using professional development practices.
