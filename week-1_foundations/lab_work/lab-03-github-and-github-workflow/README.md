@@ -118,7 +118,7 @@ Steps followed:
 
 The commit history shows the sequence of changes made during development and helps track project progress.
 
-![Git Commit History](screenshots/git_commit_history.png)
+![Git Commit History](screenshots/github_commit_history.png)
 
 ---
 
