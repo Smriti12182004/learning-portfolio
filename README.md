@@ -198,76 +198,103 @@ Improve Python programming fluency by implementing reusable functions and practi
 
 ---
 
+---
+
+# Week 2 – Data Processing & Exploratory Data Analysis
+
+**Status:** Completed
+
+## Overview
+
+Week 2 focused on understanding data processing workflows, exploratory data analysis (EDA), statistical analysis, and visualization techniques using Python.
+
+The work involved analyzing real-world datasets, performing data quality checks, applying statistical methods, and creating meaningful visualizations.
+
+## Topics Covered
+
+- Exploratory Data Analysis (EDA)
+- NumPy fundamentals
+- Pandas data manipulation
+- Statistical analysis
+- Normal Distribution
+- Outlier detection using IQR
+- Kernel Density Estimation (KDE)
+- Contour Plot visualization
+
+## Dataset Used
+
+**Wine Quality Dataset (`WineQT.csv`)**
+
+The dataset was analyzed to understand physicochemical properties of wine samples and their relationship with quality ratings.
+
+## Tools & Libraries Used
+
+- Python
+- Jupyter Notebook
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- SciPy
+- Git
+- GitHub
+
+## Deliverables
+
+Completed:
+
+- EDA notebook
+- NumPy and Pandas practice notebook
+- Normal distribution analysis
+- IQR outlier analysis
+- KDE visualization
+- Contour plot analysis
+- Learning notes documenting additional insights
+
+Detailed documentation is available inside:
+
+---
 
 # Repository Structure
 
-```text
+```
 learning-portfolio/
 │
 ├── README.md
 ├── .gitignore
 │
-└── week-1_foundations/
+├── week-1_foundations/
+│   │
+│   ├── assessment_work/
+│   │   └── assessment-0-python-version-comparison/
+│   │
+│   ├── lab_work/
+│   │   ├── lab-01-project-and-environment-setup/
+│   │   ├── lab-02-python-fluency-drills/
+│   │   ├── lab-03-github-and-github-workflow/
+│   │   ├── lab-04-command-line-and-bash/
+│   │   └── lab-05-sql-fundamentals/
+│   │
+│   └── challenges/
 │
-├── assessment_work/
-│ └── assessment-0-python-version-comparison/
-│
-├── lab_work/
-│ │
-│ ├── lab-01-project-and-environment-setup/
-│ │
-│ ├── lab-02-python-fluency-drills/
-│ │
-│ ├── lab-03-github-and-github-workflow/
-│ │
-│ ├── lab-04-command-line-and-bash/
-│ │
-│ └── lab-05-sql-fundamentals/
-│ ├── README.md
-│ ├── Chinook_Sqlite.sqlite
-│ ├── screenshots/
-│ └── sql/
-│
-└── challenges/
-│
-├── README.md
-├── challenges_faced.md
-├── csvstat.py
-├── learnings.md
-├── questions.md
-├── samples/
-│ └── example.csv
-│
-├── screenshots/
-│ ├── part-a/
-│ │ ├── 1.1_row_column_count.png
-│ │ ├── 1.2_columns.png
-│ │ ├── 1.3_datatype_check.png
-│ │ ├── 1.4_datatype_check.png
-│ │ ├── 1.5_numeric_stats.png
-│ │ └── 1.6_top_value_frequency.png
-│ │
-│ └── part-b/
-│ ├── 2.1_sql_top_customers.png
-│ ├── 2.2_revenue_by_country.png
-│ ├── 2.3_best_selling_tracks.png
-│ └── 2.4_monthly_revenue.png
-│
-└── sql/
-├── top_customers.sql
-├── revenue_by_country.sql
-├── best_selling_tracks.sql
-└── monthly_revenue.sql
-            
+└── week-2_data-processing/
+    │
+    ├── README.md
+    ├── learning_notes.md
+    │
+    ├── data/
+    │
+    └── assessments/
+        └── notebooks/
 ```
-
----
 
 # Technologies Used
 
 - Ubuntu Linux
 - Python 3.8
 - Python 3.12
+- Python Libraries (NumPy, Pandas, Matplotlib, Seaborn, SciPy)
+- Jupyter Notebook
 - SQL
 - SQLite 3
 - Bash
@@ -276,13 +303,13 @@ learning-portfolio/
 - GitHub
 - Markdown
 
+
 ---
 
 # Resources Used
 
 - Python Official Documentation
 - SQLite Documentation
-- SQLite Tutorial
 - SQLBolt
 - Ubuntu Documentation
 - Git Documentation
@@ -291,42 +318,41 @@ learning-portfolio/
 - Bash Manual
 - GNU Coreutils Documentation
 - Project Gutenberg
+- Kaggle Dataset Resources
+
 
 ---
 
 # Learning Outcomes
 
-Through these assessments and labs, I gained practical experience in:
+Through these assessments, labs, challenges, and data analysis tasks, I gained practical experience in:
 
 - Setting up Python development environments on Ubuntu.
-- Working with multiple Python versions.
-- Understanding version-specific language features.
-- Managing isolated virtual environments.
-- Writing reusable Python functions.
-- Using list comprehensions and Python collections.
-- Reading data from files and handling exceptions.
-- Using Linux command-line tools effectively.
-- Writing reusable Bash scripts.
-- Processing text using Unix command pipelines.
-- Automating command-line tasks with shell scripting.
-- Working with relational databases using SQL.
-- Filtering, sorting, grouping, and aggregating database records.
-- Joining related database tables.
-- Performing date-based analysis using SQLite.
-- Working with Git branches and pull requests.
-- Resolving merge conflicts and synchronizing branches.
-- Organizing projects using Git and GitHub.
-- Documenting technical work using Markdown.
-- Building command-line data profiling tools using Python.
-- Performing exploratory data analysis on CSV datasets.
-- Understanding data quality checks and profiling techniques.
-- Writing analytical SQL queries for extracting business insights.
-- Combining Python scripting and SQL analysis for practical data workflows.
+- Working with multiple Python versions and virtual environments.
+- Writing reusable Python programs and handling exceptions.
+- Using Linux command-line tools and Bash scripting.
+- Processing text data using Unix command pipelines.
+- Working with relational databases using SQL and SQLite.
+- Performing filtering, sorting, grouping, and aggregation operations.
+- Working with Git branches, commits, pull requests, and version control workflows.
+- Organizing and documenting projects using GitHub and Markdown.
+- Building command-line data analysis and profiling tools.
+- Loading and exploring real-world datasets using Pandas.
+- Performing exploratory data analysis (EDA).
+- Cleaning and validating datasets.
+- Understanding statistical distributions and data behavior.
+- Detecting outliers using IQR.
+- Applying density estimation techniques using KDE.
+- Creating data visualizations to identify patterns and relationships.
+- Combining Python programming, SQL analysis, and data visualization for practical workflows.
+
 
 ---
 
 # Conclusion
 
-The completed assessments, labs, and weekly challenge provided practical experience across Python programming, Linux command-line operations, Bash scripting, SQL fundamentals, data profiling, and Git/GitHub workflows.
+The completed assessments, labs, challenges, and data processing activities provided practical experience across Python programming, Linux tools, Bash scripting, SQL fundamentals, Git/GitHub workflows, and exploratory data analysis.
 
-The portfolio demonstrates the ability to apply programming and data analysis concepts through structured exercises, build command-line tools, perform SQL-based analysis, document technical work, and maintain projects using professional development practices.
+The portfolio demonstrates the ability to build structured projects, analyze datasets, apply statistical techniques, create meaningful visualizations, perform database analysis, and maintain professional technical documentation.
+
+Through this learning journey, I developed a strong foundation in programming, data analysis, and software development practices.
