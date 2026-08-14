@@ -382,8 +382,68 @@ Completed:
 
 Detailed documentation is available inside Week 2 directories.
 
+## Repository Structure 
 
----
+```
+learning-portfolio/
+│
+├── README.md
+├── .gitignore
+│
+├── week-1_foundations/
+│   │
+│   ├── README.md
+│   │
+│   ├── assessment_work/
+│   │   └── assessment-0-python-version-comparison/
+│   │
+│   ├── lab_work/
+│   │   ├── lab-01-project-and-environment-setup/
+│   │   ├── lab-02-python-fluency-drills/
+│   │   ├── lab-03-github-and-github-workflow/
+│   │   ├── lab-04-command-line-and-bash/
+│   │   └── lab-05-sql-fundamentals/
+│   │
+│   └── challenges/
+│       └── csv-profiling-tool/
+│
+└── week-2_data-processing/
+    │
+    ├── README.md
+    ├── learning_notes.md
+    │
+    ├── lab_work/
+    │   │
+    │   ├── lab-1-pandas/
+    │   │   └── pandas_fundamentals.ipynb
+    │   │
+    │   ├── lab-2-numpy/
+    │   │   └── numpy_vectorization.ipynb
+    │   │
+    │   └── lab-3-data-cleaning/
+    │       │
+    │       ├── data/
+    │       │   └── WineQT.csv
+    │       │
+    │       ├── data-cleaning.ipynb
+    │       └── README.md
+    │
+    ├── practice/
+    │   │
+    │   ├── normal-distribution/
+    │   ├── iqr/
+    │   ├── kde/
+    │   └── contour-plots/
+    │
+    └── assessments/
+        └── notebooks/
+            ├── 01_eda.ipynb
+            ├── 02_pandas_numpy.ipynb
+            ├── 03_normal_distribution.ipynb
+            ├── 04_IQR.ipynb
+            ├── 05_KDE.ipynb
+            └── 06_Contour_Plot.ipynb
+```
 
 # Technologies Used
 
