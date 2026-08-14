@@ -198,23 +198,22 @@ Improve Python programming fluency by implementing reusable functions and practi
 
 ---
 
----
-
 # Week 2 – Data Processing & Exploratory Data Analysis
 
 **Status:** Completed
 
 ## Overview
 
-Week 2 focused on understanding data processing workflows, exploratory data analysis (EDA), statistical analysis, and visualization techniques using Python.
+Week 2 focused on understanding data processing workflows, exploratory data analysis (EDA), statistical analysis, data cleaning, and visualization techniques using Python.
 
-The work involved analyzing real-world datasets, performing data quality checks, applying statistical methods, and creating meaningful visualizations.
+The work involved analyzing real-world datasets, performing data quality checks, applying statistical methods, cleaning datasets, and creating meaningful visualizations.
 
 ## Topics Covered
 
 - Exploratory Data Analysis (EDA)
 - NumPy fundamentals
 - Pandas data manipulation
+- Data cleaning and preprocessing
 - Statistical analysis
 - Normal Distribution
 - Outlier detection using IQR
@@ -225,7 +224,7 @@ The work involved analyzing real-world datasets, performing data quality checks,
 
 **Wine Quality Dataset (`WineQT.csv`)**
 
-The dataset was analyzed to understand physicochemical properties of wine samples and their relationship with quality ratings.
+The dataset was analyzed to understand physicochemical properties of wine samples, identify data quality issues, and explore relationships between features and quality ratings.
 
 ## Tools & Libraries Used
 
@@ -239,61 +238,164 @@ The dataset was analyzed to understand physicochemical properties of wine sample
 - Git
 - GitHub
 
-## Deliverables
 
-Completed:
+# Lab Work
 
-- EDA notebook
-- NumPy and Pandas practice notebook
-- Normal distribution analysis
-- IQR outlier analysis
-- KDE visualization
-- Contour plot analysis
-- Learning notes documenting additional insights
+## Lab 1 – Pandas Fundamentals
 
-Detailed documentation is available inside:
+**Status:** Completed
+
+### Objective
+
+- Learn data manipulation and analysis using Pandas DataFrames.
+- Perform data inspection, filtering, transformation, and aggregation operations.
+
+### Completed Tasks
+
+- Loaded the Wine Quality dataset into a Pandas DataFrame.
+
+- Inspected dataset structure using:
+  - `head()`
+  - `info()`
+  - `describe()`
+  - `shape`
+
+- Selected rows and columns using:
+  - `loc`
+  - `iloc`
+
+- Applied conditional filtering on dataset features.
+
+- Created derived features:
+  - Generated `alcohol_level` based on alcohol content.
+  - Created `acidity_ratio` using acidity-related features.
+
+- Performed grouping and aggregation:
+  - Grouped data based on wine quality.
+  - Calculated mean and count values for alcohol content.
 
 ---
 
-# Repository Structure
+## Lab 2 – NumPy and Vectorization
 
-```
-learning-portfolio/
-│
-├── README.md
-├── .gitignore
-│
-├── week-1_foundations/
-│   │
-│   ├── assessment_work/
-│   │   └── assessment-0-python-version-comparison/
-│   │
-│   ├── lab_work/
-│   │   ├── lab-01-project-and-environment-setup/
-│   │   ├── lab-02-python-fluency-drills/
-│   │   ├── lab-03-github-and-github-workflow/
-│   │   ├── lab-04-command-line-and-bash/
-│   │   └── lab-05-sql-fundamentals/
-│   │
-│   └── challenges/
-│
-└── week-2_data-processing/
-    │
-    ├── README.md
-    ├── learning_notes.md
-    │
-    ├── data/
-    │
-    └── assessments/
-        └── notebooks/
-```
+**Status:** Completed
+
+### Objective
+
+- Understand numerical computation using NumPy arrays.
+- Apply vectorized operations for efficient data processing.
+
+### Completed Tasks
+
+- Created and manipulated NumPy arrays.
+
+- Performed array operations including:
+  - Indexing
+  - Slicing
+  - Mathematical transformations
+
+- Calculated numerical statistics:
+  - Row-wise mean.
+  - Column-wise maximum values.
+
+- Applied normalization using vectorized NumPy operations.
+
+- Implemented broadcasting operations for array transformations.
+
+- Compared execution time between:
+  - Traditional Python loops.
+  - NumPy vectorized operations.
+
+---
+
+## Lab 3 – Data Cleaning
+
+**Status:** Completed
+
+### Objective
+
+- Perform data cleaning and preprocessing to improve dataset quality.
+- Identify and handle common data quality issues before analysis.
+
+### Completed Tasks
+
+- Loaded and inspected the Wine Quality dataset.
+
+- Performed missing value analysis:
+  - Calculated missing value count.
+  - Calculated missing value percentage.
+  - Created missingness summary.
+
+- Applied missing value handling strategies:
+  - Identified columns requiring treatment.
+  - Verified missing-value consistency.
+
+- Performed data type validation:
+  - Checked column data types.
+  - Confirmed appropriate data representation.
+
+- Detected and handled duplicate records:
+  - Identified duplicate rows.
+  - Removed duplicate observations.
+  - Verified duplicate removal.
+
+- Performed outlier analysis:
+  - Detected potential outliers using the IQR method.
+  - Visualized distributions using boxplots.
+  - Evaluated outlier treatment decisions.
+
+- Validated the cleaned dataset for further analysis.
+
+---
+
+# Practice Work
+
+**Status:** Completed
+
+### Completed Tasks
+
+- Studied statistical concepts used in exploratory data analysis.
+
+- Implemented:
+  - Normal distribution analysis.
+  - IQR-based outlier detection.
+  - Kernel Density Estimation (KDE).
+
+- Created contour plots for visualization.
+
+- Documented learning notes and observations.
+
+---
+
+# Deliverables
+
+Completed:
+
+- Pandas fundamentals notebook.
+- NumPy and vectorization notebook.
+- Data cleaning notebook.
+- Normal distribution analysis.
+- IQR outlier analysis.
+- KDE visualization.
+- Contour plot analysis.
+- Learning notes documenting additional insights.
+
+Detailed documentation is available inside Week 2 directories.
+
+
+---
 
 # Technologies Used
 
 - Ubuntu Linux
 - Python 3.8
 - Python 3.12
-- Python Libraries (NumPy, Pandas, Matplotlib, Seaborn, SciPy)
+- Python Libraries:
+  - NumPy
+  - Pandas
+  - Matplotlib
+  - Seaborn
+  - SciPy
 - Jupyter Notebook
 - SQL
 - SQLite 3
@@ -303,49 +405,49 @@ learning-portfolio/
 - GitHub
 - Markdown
 
-
 ---
 
 # Resources Used
 
 - Python Official Documentation
+- NumPy Documentation
+- Pandas Documentation
+- Matplotlib Documentation
+- Seaborn Documentation
+- SciPy Documentation
 - SQLite Documentation
 - SQLBolt
 - Ubuntu Documentation
 - Git Documentation
 - GitHub Documentation
 - Visual Studio Code Documentation
-- Bash Manual
-- GNU Coreutils Documentation
-- Project Gutenberg
 - Kaggle Dataset Resources
-
 
 ---
 
 # Learning Outcomes
 
-Through these assessments, labs, challenges, and data analysis tasks, I gained practical experience in:
+Through these assessments, labs, and data analysis tasks, I gained practical experience in:
 
 - Setting up Python development environments on Ubuntu.
-- Working with multiple Python versions and virtual environments.
+- Working with Python virtual environments and project structures.
 - Writing reusable Python programs and handling exceptions.
 - Using Linux command-line tools and Bash scripting.
-- Processing text data using Unix command pipelines.
 - Working with relational databases using SQL and SQLite.
 - Performing filtering, sorting, grouping, and aggregation operations.
-- Working with Git branches, commits, pull requests, and version control workflows.
+- Working with Git branches, commits, and version control workflows.
 - Organizing and documenting projects using GitHub and Markdown.
-- Building command-line data analysis and profiling tools.
 - Loading and exploring real-world datasets using Pandas.
 - Performing exploratory data analysis (EDA).
+- Manipulating numerical data using NumPy arrays.
+- Applying vectorization techniques for efficient computation.
 - Cleaning and validating datasets.
+- Handling missing values, duplicate records, and data quality issues.
+- Detecting outliers using statistical techniques such as IQR.
 - Understanding statistical distributions and data behavior.
-- Detecting outliers using IQR.
 - Applying density estimation techniques using KDE.
-- Creating data visualizations to identify patterns and relationships.
-- Combining Python programming, SQL analysis, and data visualization for practical workflows.
-
+- Creating visualizations to identify patterns and relationships.
+- Combining Python programming, statistical analysis, and visualization for practical data workflows.
 
 ---
 
@@ -353,6 +455,6 @@ Through these assessments, labs, challenges, and data analysis tasks, I gained p
 
 The completed assessments, labs, challenges, and data processing activities provided practical experience across Python programming, Linux tools, Bash scripting, SQL fundamentals, Git/GitHub workflows, and exploratory data analysis.
 
-The portfolio demonstrates the ability to build structured projects, analyze datasets, apply statistical techniques, create meaningful visualizations, perform database analysis, and maintain professional technical documentation.
+The portfolio demonstrates the ability to build structured projects, analyze real-world datasets, apply data preprocessing techniques, perform statistical analysis, create meaningful visualizations, and maintain professional technical documentation.
 
-Through this learning journey, I developed a strong foundation in programming, data analysis, and software development practices.
+Through this learning journey, I developed a strong foundation in programming, data processing, exploratory data analysis, and software development practices.
