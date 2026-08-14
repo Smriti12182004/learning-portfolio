@@ -61,3 +61,39 @@ This repository documents my Week 2 learning journey focused on data processing,
 - Efficient numerical computation using NumPy arrays.
 - Importance of vectorization for faster data processing.
 - Grouping, aggregation, and transformation of tabular data.
+
+---
+
+## Lab 3: Data Cleaning
+
+### Tasks Completed:
+- Performed missing value analysis:
+  - Calculated missing value count for each column.
+  - Calculated missing value percentage.
+  - Created a missingness summary table.
+
+- Applied missing value handling strategy:
+  - Identified columns requiring treatment.
+  - Verified that no missing-value imputation was required.
+
+- Performed data type validation:
+  - Checked existing data types of all columns.
+  - Verified that features were stored in appropriate formats.
+  - Confirmed no datatype conversion was required.
+
+- Detected and handled duplicate records:
+  - Identified duplicate rows.
+  - Removed duplicate observations.
+  - Verified that no duplicate records remained.
+
+- Performed outlier analysis:
+  - Detected potential outliers using the IQR method.
+  - Visualized feature distributions using boxplots.
+  - Evaluated outlier treatment strategy and retained valid observations.
+
+- Validated the cleaned dataset:
+  - Checked missing values after cleaning.
+  - Verified duplicate removal.
+  - Confirmed dataset consistency.
+
+  ---
