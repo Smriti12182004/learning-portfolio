@@ -97,3 +97,58 @@ This repository documents my Week 2 learning journey focused on data processing,
   - Confirmed dataset consistency.
 
   ---
+
+  ---
+
+## Lab 4: Statistics Intuition
+
+### Tasks Completed:
+- Performed descriptive statistical analysis:
+  - Calculated mean, median, and standard deviation.
+  - Calculated the 25th, 50th, and 75th percentiles.
+  - Compared mean and median to understand central tendency.
+
+- Analyzed distribution characteristics:
+  - Visualized the alcohol distribution using a histogram.
+  - Calculated skewness to measure distribution asymmetry.
+  - Identified potential outliers using the IQR method.
+  - Visualized potential outliers using a boxplot.
+
+- Performed correlation analysis:
+  - Created a correlation matrix for numerical variables.
+  - Identified the strongest correlation pair.
+  - Interpreted the direction and strength of the relationship.
+  - Understood why correlation does not imply causation.
+
+- Performed hypothesis testing:
+  - Divided wines into low-quality and high-quality groups.
+  - Formulated null and alternative hypotheses.
+  - Compared mean alcohol content between the two groups.
+  - Performed an independent samples t-test.
+  - Interpreted the p-value and statistical significance.
+  - Understood the limitations of p-value interpretation.
+
+---
+
+## Lab 5: Visualization and Mini-EDA
+
+### Tasks Completed:
+- Created distribution visualizations:
+  - Created a labeled histogram for alcohol content.
+  - Created a boxplot to visualize spread and potential outliers.
+
+- Created relationship visualizations:
+  - Created a scatter plot between alcohol content and wine quality.
+  - Added a caption explaining the relationship shown.
+
+- Performed correlation visualization:
+  - Created a correlation matrix for numerical variables.
+  - Visualized correlations using a Seaborn heatmap.
+
+- Performed mini-EDA:
+  - Reviewed dataset shape and structure.
+  - Generated summary statistics for numerical variables.
+  - Checked for missing values and duplicate records.
+  - Summarized key patterns and characteristics of the dataset.
+
+---
