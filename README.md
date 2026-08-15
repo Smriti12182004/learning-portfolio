@@ -348,102 +348,174 @@ The dataset was analyzed to understand physicochemical properties of wine sample
 
 ---
 
+# Lab 4 – Statistics Intuition
+
+**Status:** Completed
+
+### Objective
+
+- Understand descriptive statistics and data behavior.
+- Analyze relationships between variables.
+- Apply hypothesis testing and interpret statistical results.
+
+### Completed Tasks
+
+- Calculated mean, median, standard deviation, and percentiles.
+- Compared mean and median to understand central tendency.
+- Analyzed distribution and skewness.
+- Identified potential outliers.
+- Created and interpreted a correlation matrix.
+- Identified the strongest correlation pair.
+- Explained why correlation does not imply causation.
+- Formulated hypotheses for two quality groups.
+- Performed an independent samples t-test.
+- Interpreted the p-value and statistical significance.
+- Explained what a p-value does and does not tell us.
+- Stated the final conclusion from the hypothesis test.
+
+### Commands & Functions Used
+
+```python
+df.mean()
+df.median()
+df.std()
+df.quantile()
+df.skew()
+df.corr()
+```
+---
+---
+
+# Lab 5 – Visualization and Mini-EDA
+
+**Status:** Completed
+
+### Objective
+
+- Apply visualization techniques to understand data distributions and relationships.
+- Perform a basic end-to-end exploratory data analysis workflow.
+
+### Completed Tasks
+
+- Created a labeled histogram.
+- Created a boxplot to analyze spread and potential outliers.
+- Created a scatter plot to analyze relationships between variables.
+- Added a caption explaining the scatter plot.
+- Created a correlation matrix.
+- Created a Seaborn correlation heatmap.
+- Performed a quick end-to-end mini-EDA.
+- Reviewed dataset structure and summary statistics.
+- Checked missing values and duplicate records.
+- Documented key observations from the analysis.
+
+### Commands & Functions Used
+
+```python
+sns.histplot()
+sns.boxplot()
+sns.scatterplot()
+
+df.corr()
+
+sns.heatmap()
+
+df.head()
+df.info()
+df.describe()
+
+df.isnull().sum()
+df.duplicated().sum()
+```
+
+---
+
 # Practice Work
 
 **Status:** Completed
 
+### Objective
+
+- Strengthen understanding of statistical concepts through additional practice.
+- Apply statistical techniques to analyze distributions, outliers, and data density.
+- Explore different visualization methods for better interpretation of data.
+
 ### Completed Tasks
 
-- Studied statistical concepts used in exploratory data analysis.
+- Generated and analyzed normal distributions.
+- Calculated and interpreted mean and standard deviation.
+- Applied z-score standardization.
+- Detected outliers using the Interquartile Range (IQR) method.
+- Visualized outliers using boxplots.
+- Applied Kernel Density Estimation (KDE) to understand data distributions.
+- Studied the effect of bandwidth on KDE curves.
+- Created contour plots to visualize two-dimensional data density.
+- Compared different visualization techniques to identify patterns.
+- Documented observations and learning notes.
 
-- Implemented:
-  - Normal distribution analysis.
-  - IQR-based outlier detection.
-  - Kernel Density Estimation (KDE).
+### Concepts Practiced
 
-- Created contour plots for visualization.
-
-- Documented learning notes and observations.
+- Normal distribution
+- Mean and standard deviation
+- Z-score
+- Quartiles and IQR
+- Outlier detection
+- Kernel Density Estimation (KDE)
+- Bandwidth
+- Contour plots
+- Data distribution
+- Statistical visualization
 
 ---
-
-# Deliverables
-
-Completed:
-
-- Pandas fundamentals notebook.
-- NumPy and vectorization notebook.
-- Data cleaning notebook.
-- Normal distribution analysis.
-- IQR outlier analysis.
-- KDE visualization.
-- Contour plot analysis.
-- Learning notes documenting additional insights.
-
-Detailed documentation is available inside Week 2 directories.
-
 ## Repository Structure 
 
 ```
-learning-portfolio/
+week-2_data-processing/
 │
 ├── README.md
+├── learning_notes.md
+├── requirement.txt
 ├── .gitignore
 │
-├── week-1_foundations/
-│   │
+├── data/
+│   └── WineQT.csv
+│
+├── lab_work/
 │   ├── README.md
 │   │
-│   ├── assessment_work/
-│   │   └── assessment-0-python-version-comparison/
+│   ├── lab-1-pandas/
+│   │   └── pandas_fundamentals.ipynb
 │   │
-│   ├── lab_work/
-│   │   ├── lab-01-project-and-environment-setup/
-│   │   ├── lab-02-python-fluency-drills/
-│   │   ├── lab-03-github-and-github-workflow/
-│   │   ├── lab-04-command-line-and-bash/
-│   │   └── lab-05-sql-fundamentals/
+│   ├── lab-2-numpy/
+│   │   └── numpy_vectorization.ipynb
 │   │
-│   └── challenges/
-│       └── csv-profiling-tool/
+│   ├── lab-3-data-cleaning/
+│   │   ├── data/
+│   │   │   └── WineQT.csv
+│   │   └── data-cleaning.ipynb
+│   │
+│   ├── lab-4-statistics-intuition/
+│   │   ├── data/
+│   │   │   └── WineQT.csv
+│   │   └── statistics-intuition.ipynb
+│   │
+│   └── lab-05-visualizaton-and-mini-eda/
+│       ├── data/
+│       │   └── WineQT.csv
+│       └── visualization-and-mini-eda.ipynb
 │
-└── week-2_data-processing/
+└── practice/
+    ├── data/
     │
-    ├── README.md
+    ├── notebooks/
+    │   ├── 01_eda.ipynb
+    │   ├── 02_pandas_numpy.ipynb
+    │   ├── 03_normal_distribution.ipynb
+    │   ├── 04_IQR.ipynb
+    │   ├── 05_KDE.ipynb
+    │   └── 06_Contour_Plot.ipynb
+    │
     ├── learning_notes.md
-    │
-    ├── lab_work/
-    │   │
-    │   ├── lab-1-pandas/
-    │   │   └── pandas_fundamentals.ipynb
-    │   │
-    │   ├── lab-2-numpy/
-    │   │   └── numpy_vectorization.ipynb
-    │   │
-    │   └── lab-3-data-cleaning/
-    │       │
-    │       ├── data/
-    │       │   └── WineQT.csv
-    │       │
-    │       ├── data-cleaning.ipynb
-    │       └── README.md
-    │
-    ├── practice/
-    │   │
-    │   ├── normal-distribution/
-    │   ├── iqr/
-    │   ├── kde/
-    │   └── contour-plots/
-    │
-    └── assessments/
-        └── notebooks/
-            ├── 01_eda.ipynb
-            ├── 02_pandas_numpy.ipynb
-            ├── 03_normal_distribution.ipynb
-            ├── 04_IQR.ipynb
-            ├── 05_KDE.ipynb
-            └── 06_Contour_Plot.ipynb
-```
+    └── README.md
 
 # Technologies Used
 
@@ -464,8 +536,52 @@ learning-portfolio/
 - Git
 - GitHub
 - Markdown
+```
+---
+---
+
+# Week 1 – Foundations
+
+### Labs
+
+- [Lab 1 – Project and Environment Setup](./week-1_foundations/lab_work/lab-01-project-and-environment-setup/)
+- [Lab 2 – Python Fluency Drills](./week-1_foundations/lab_work/lab-02-python-fluency-drills/)
+- [Lab 4 – Command Line and Bash](./week-1_foundations/lab_work/lab-04-command-line-and-bash/)
+- [Lab 5 – SQL Fundamentals](./week-1_foundations/lab_work/lab-05-sql-fundamentals/)
+
+### Assessment Work
+
+- [Assessment 0 – Python Version Comparison](./week-1_foundations/assessment_work/assessment-0-python-version-comparison/)
+
+### Challenges
+
+- [Week 1 Challenges](./week-1_foundations/challenges/)
 
 ---
+
+# Week 2 – Data Processing & Exploratory Data Analysis
+
+### Labs
+
+- [Lab 1 – Pandas Fundamentals](./week-2_data-processing/lab_work/lab-01-pandas_fundamentals/pandas-fundamentals.ipynb)
+- [Lab 2 – NumPy and Vectorization](./week-2_data-processing/lab_work/lab-02-numpy-and-vectorization/numpy-vectorization.ipynb)
+- [Lab 3 – Data Cleaning](./week-2_data-processing/lab_work/lab-3-data-cleaning/data-cleaning.ipynb)
+- [Lab 4 – Statistics Intuition](./week-2_data-processing/lab_work/lab-4-statistics-intuition/statistics-intuition.ipynb)
+- [Lab 5 – Visualization and Mini-EDA](./week-2_data-processing/lab_work/lab-05-visualizaton-and-mini-eda/visualization-and-mini-eda.ipynb)
+
+### Practice Notebooks
+
+- [Practice 1 – EDA](./week-2_data-processing/practice/notebooks/01_eda.ipynb)
+- [Practice 2 – Pandas & NumPy](./week-2_data-processing/practice/notebooks/02_pandas_numpy.ipynb)
+- [Practice 3 – Normal Distribution](./week-2_data-processing/practice/notebooks/03_normal_distribution.ipynb)
+- [Practice 4 – IQR](./week-2_data-processing/practice/notebooks/04_IQR.ipynb)
+- [Practice 5 – KDE](./week-2_data-processing/practice/notebooks/05_KDE.ipynb)
+- [Practice 6 – Contour Plot](./week-2_data-processing/practice/notebooks/06_Contour_Plot.ipynb)
+
+### Documentation
+
+- [Week 2 README](./week-2_data-processing/README.md)
+- [Week 2 Learning Notes](./week-2_data-processing/learning_notes.md)
 
 # Resources Used
 
@@ -487,30 +603,51 @@ learning-portfolio/
 
 # Learning Outcomes
 
-Through these assessments, labs, and data analysis tasks, I gained practical experience in:
+Through the Week 2 labs, practice work, and data analysis tasks, I gained practical experience in:
 
-- Setting up Python development environments on Ubuntu.
-- Working with Python virtual environments and project structures.
-- Writing reusable Python programs and handling exceptions.
-- Using Linux command-line tools and Bash scripting.
-- Working with relational databases using SQL and SQLite.
-- Performing filtering, sorting, grouping, and aggregation operations.
-- Working with Git branches, commits, and version control workflows.
-- Organizing and documenting projects using GitHub and Markdown.
-- Loading and exploring real-world datasets using Pandas.
-- Performing exploratory data analysis (EDA).
-- Manipulating numerical data using NumPy arrays.
-- Applying vectorization techniques for efficient computation.
+- Setting up and working with Python environments on Ubuntu.
+- Using Jupyter Notebook for interactive data analysis.
+- Loading and inspecting real-world datasets using Pandas.
+- Selecting, filtering, grouping, and aggregating data.
+- Creating derived features from existing data.
+- Performing numerical computation using NumPy arrays.
+- Applying vectorization and broadcasting for efficient computation.
+- Comparing vectorized operations with traditional Python loops.
 - Cleaning and validating datasets.
-- Handling missing values, duplicate records, and data quality issues.
-- Detecting outliers using statistical techniques such as IQR.
-- Understanding statistical distributions and data behavior.
-- Applying density estimation techniques using KDE.
-- Creating visualizations to identify patterns and relationships.
-- Combining Python programming, statistical analysis, and visualization for practical data workflows.
+- Analyzing missing values and duplicate records.
+- Detecting and evaluating potential outliers using the IQR method.
+- Understanding mean, median, standard deviation, percentiles, and skewness.
+- Analyzing relationships between variables using correlation.
+- Performing hypothesis testing using an independent samples t-test.
+- Interpreting p-values and statistical significance.
+- Understanding normal distributions and z-scores.
+- Applying Kernel Density Estimation (KDE).
+- Creating histograms, boxplots, scatter plots, heatmaps, and contour plots.
+- Performing a basic end-to-end exploratory data analysis workflow.
+- Understanding the importance of selecting appropriate statistical methods and visualizations.
+- Interpreting analytical results rather than relying only on numerical outputs.
+- Documenting technical work using Markdown and GitHub.
+- Organizing practical work using Git and version control.
 
 ---
 
+# Conclusion
+
+The completed Week 2 labs and practice exercises provided practical experience in **data processing, data cleaning, exploratory data analysis, statistical analysis, and visualization using Python**.
+
+The work demonstrated the complete data analysis workflow, from loading and validating a dataset to performing statistical analysis, identifying patterns, detecting outliers, and communicating findings through visualizations.
+
+Through this learning journey, I developed a stronger understanding of how Python libraries such as **Pandas, NumPy, Matplotlib, Seaborn, and SciPy** can be combined to perform practical data analysis.
+
+The practical exercises also helped me understand that effective data analysis requires both **technical implementation and careful interpretation of results**. I learned that data analysis is an iterative process, where observations from one stage can guide the next stage of investigation.
+
+Week 2 provided a strong foundation for further learning in:
+
+- Data Science
+- Machine Learning
+- Data Analytics
+- Statistical Analysis
+- Data Visualization
 # Conclusion
 
 The completed assessments, labs, challenges, and data processing activities provided practical experience across Python programming, Linux tools, Bash scripting, SQL fundamentals, Git/GitHub workflows, and exploratory data analysis.
