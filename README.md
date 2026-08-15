@@ -384,7 +384,6 @@ df.skew()
 df.corr()
 ```
 ---
----
 
 # Lab 5 – Visualization and Mini-EDA
 
@@ -538,8 +537,7 @@ week-2_data-processing/
 - Markdown
 ```
 ---
----
-
+#Links To Files:
 # Week 1 – Foundations
 
 ### Labs
@@ -577,11 +575,7 @@ week-2_data-processing/
 - [Practice 4 – IQR](./week-2_data-processing/practice/notebooks/04_IQR.ipynb)
 - [Practice 5 – KDE](./week-2_data-processing/practice/notebooks/05_KDE.ipynb)
 - [Practice 6 – Contour Plot](./week-2_data-processing/practice/notebooks/06_Contour_Plot.ipynb)
-
-### Documentation
-
-- [Week 2 README](./week-2_data-processing/README.md)
-- [Week 2 Learning Notes](./week-2_data-processing/learning_notes.md)
+---
 
 # Resources Used
 
