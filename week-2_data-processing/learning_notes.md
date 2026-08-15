@@ -85,9 +85,38 @@ Data analysis combines technical skills with decision-making.
 
 ---
 
+### Question 5: Does a small p-value mean that the difference is practically important?
+
+**Exploration:**
+
+Not necessarily. A small p-value provides evidence against the null hypothesis,
+but it does not indicate how large or practically meaningful the difference is.
+
+**Learning:**
+
+Statistical significance and practical significance are different concepts.
+
+---
+
+
+### Question 6: Why should we compare mean and median?
+
+**Exploration:**
+
+The mean can be strongly affected by extreme values, while the median is more
+robust to outliers.
+
+**Learning:**
+
+Comparing mean and median can provide an initial indication of skewness and help
+understand the distribution.
+
+---
+
 # Final Reflection
 
-The biggest learning from Week 2 was understanding that data analysis is not only about executing Python commands.
+The biggest learning from Week 2 was understanding that data analysis is not
+only about executing Python commands.
 
 The real challenge is:
 
@@ -95,3 +124,10 @@ The real challenge is:
 - Understanding data behavior
 - Selecting appropriate methods
 - Converting observations into meaningful insights
+- Interpreting results instead of only calculating them
+- Understanding the limitations of statistical results
+- Using visualizations to support analytical decisions
+
+Overall, Week 2 helped me develop a more structured and practical approach to
+working with data.
+  
