@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "csv-insights"
+version = "1.0.3"
+description = "A Python package for CSV profiling, data analysis, and statistical summaries"
+readme = "README.md"
+
+authors = [
+    {name = "Smriti"}
+]
+
+dependencies = []
+
+
+[project.scripts]
+csvstat = "csvstat.cli:main"
+
+
+[tool.setuptools.packages.find]
+include = ["csvstat*"]
