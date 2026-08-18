@@ -1,0 +1,32 @@
+Rows: 3
+Columns: 3
+
+Columns:
+Name
+Age
+Country
+
+Column Details:
+
+Column: Name
+Type: text
+Missing: 0
+Top 5 values:
+Ron: 1
+John: 1
+Alie: 1
+
+Column: Age
+Type: numeric
+Missing: 0
+Min: 25.0
+Mean: 27.666666666666668
+Max: 30.0
+
+Column: Country
+Type: text
+Missing: 0
+Top 5 values:
+Australia: 1
+USA: 1
+United Kingdom: 1
