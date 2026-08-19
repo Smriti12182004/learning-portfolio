@@ -37,7 +37,6 @@ except FileNotFoundError:
 
 
 # Separate header and rows
-# Separate header and rows
 if not data:
     print("Error: CSV file is empty")
     exit()
