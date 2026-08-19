@@ -4,7 +4,7 @@
 
 The objective of this assessment is to extend the Week 1 `csvstat` CSV profiling tool by integrating it with AWS services.
 
-The application runs on an Amazon EC2 instance and uses Amazon S3 for input and output file storage.
+The application was deployed on an Amazon EC2 instance and uses Amazon S3 for input and output file storage.
 
 This assessment demonstrates:
 
@@ -46,14 +46,13 @@ Amazon S3 Output Folder
 
 | Technology | Purpose |
 |------------|---------|
-| Python 3.12.2 | Application development |
+| Python | Application development |
 | Boto3 | AWS SDK for Python |
-| Amazon S3 | CSV and report storage |
-| Amazon EC2 | Application execution |
-| AWS IAM | Access management |
+| Amazon S3 | CSV input and report storage |
+| Amazon EC2 | Application execution environment |
+| AWS IAM | Secure access management |
 | AWS CLI | AWS resource management |
 | Git | Version control |
-
 
 ---
 
@@ -159,42 +158,39 @@ Screenshots:
 
 
 ---
-
-# 3. IAM Role Setup
+## 3. IAM Role Setup
 
 Created IAM role:
 
-```
 csvstat-ec2-s3-role
-```
-
 
 Purpose:
 
 The IAM role allows the EC2 instance to securely access S3 resources.
 
-
 Attached policy:
 
-```
-AmazonS3FullAccess
-```
+csvstat-s3-policy
 
+The policy follows the principle of least privilege and allows only required S3 actions:
+
+- s3:ListBucket
+- s3:GetObject
+- s3:PutObject
 
 Screenshots:
 
-![IAM Role Creation](screenshots/04_iam_role.jpeg)
+![IAM Role Creation](screenshots/04_create_policy.jpeg)
 
-
-![Attach S3 Policy](screenshots/05_attach_s3_policy.jpeg)
-
-
+![S3 Policy Attached](screenshots/05_policy_attached.jpeg)
 
 ---
 
 # 4. EC2 Instance Setup
 
-Created EC2 instance:
+An EC2 instance was created for running the CSVStat application.
+
+Configuration:
 
 | Configuration | Details |
 |---|---|
@@ -202,8 +198,9 @@ Created EC2 instance:
 | Instance Type | t3.micro |
 | Region | ap-south-1 |
 
+The IAM instance profile was attached to the EC2 instance to allow secure S3 access.
 
-The IAM role was attached to the EC2 instance.
+(Note: The EC2 instance was terminated after completing the assessment.)
 
 
 Screenshot:
@@ -319,21 +316,6 @@ Report uploaded to S3 successfully
 
 CSVStat execution completed
 ```
-
-
-
----
-
-# Requirements
-
-```
-Python: 3.12.2
-pip: 24.0
-Git: 2.43.0
-AWS CLI: 2.36.21
-boto3: 1.43.72
-```
-
 ---
 
 # Learning Outcomes
