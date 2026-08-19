@@ -1,41 +1,82 @@
 # CSV Insights
 
-A lightweight Python package for **CSV profiling and data analysis**.  
-`csvstat` helps users quickly understand the structure and content of CSV files by generating useful statistics, detecting data types, and identifying missing values.
+## Overview
+
+CSV Insights is a Python package for CSV profiling and data analysis.
+
+This project is a packaged and unit-tested version of the Week-1 `csvstat` tool.  
+It provides a reusable Python API and a command-line interface to analyze CSV files and generate useful statistical summaries.
+
+---
 
 ## Features
 
-- 📊 **CSV File Profiling**
-  - Analyze CSV files and generate a structured summary
-  - Get total number of rows and columns
+- CSV file profiling
+- Row and column count analysis
+- Automatic column data type detection
+  - Numeric columns
+  - Text columns
+- Missing value detection
+- Numeric column statistics:
+  - Minimum value
+  - Maximum value
+  - Mean value
+- Text column analysis:
+  - Top frequent values
+  - Frequency count
+- Command-line interface support
 
-- 🔍 **Column Analysis**
-  - Automatically detect column data types:
-    - Numeric columns
-    - Text columns
-  - Identify missing values in each column
+---
 
-- 📈 **Numeric Statistics**
-  - Calculate statistical summaries for numeric columns:
-    - Minimum value
-    - Maximum value
-    - Mean value
+## Project Structure
 
-- 🔤 **Text Analysis**
-  - Find the most frequent values in text columns
-  - Generate top occurring values with their frequency
+```text
+challenge_extension/
+│
+├── csvstat/
+│   ├── __init__.py
+│   ├── analyzer.py
+│   └── cli.py
+│
+├── tests/
+│   └── test_analyzer.py
+│
+├── data/
+│   └── sample.csv
+│
+├── package.md
+├── pyproject.toml
+└── README.md
+```
 
-- 💻 **Command Line Interface**
-  - Analyze CSV files directly from the terminal using the `csvstat` command
-
+---
 
 ## Installation
 
-Install **CSV Insights** from PyPI:
+### From PyPI
+
+Install the published package using:
 
 ```bash
 pip install csv-insights
 ```
+
+### From Source
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+cd challenge_extension
+```
+
+Install the package locally:
+
+```bash
+pip install .
+```
+
+---
 
 ## Usage
 
@@ -44,7 +85,7 @@ pip install csv-insights
 ```python
 from csvstat import analyze_csv
 
-result = analyze_csv("sample.csv")
+result = analyze_csv("data/sample.csv")
 
 print(result)
 ```
@@ -54,31 +95,96 @@ print(result)
 Analyze CSV files directly from the terminal:
 
 ```bash
-csvstat sample.csv
+csvstat data/sample.csv
 ```
 
-## Output
+---
 
-CSV Insights provides:
+## Example Output
 
-- Total number of rows and columns
-- Column data type detection
-- Missing value information
-- Numeric statistics:
-  - Minimum value
-  - Maximum value
-  - Mean value
-- Most frequent text values
+```python
+{
+    'rows': 3,
+    'columns': 3,
+    'column_details': {
+        'Name': {
+            'type': 'text',
+            'missing': 0,
+            'top_values': [
+                ('Ron', 1),
+                ('John', 1),
+                ('Alie', 1)
+            ]
+        },
+        'Age': {
+            'type': 'numeric',
+            'missing': 0,
+            'min': 25.0,
+            'max': 30.0,
+            'mean': 27.666666666666668
+        },
+        'Country': {
+            'type': 'text',
+            'missing': 0,
+            'top_values': [
+                ('Australia', 1),
+                ('USA', 1),
+                ('United Kingdom', 1)
+            ]
+        }
+    }
+}
+```
 
+---
 
 ## Testing
 
-Run tests using pytest:
+This project uses `pytest` for unit testing.
+
+Run tests using:
 
 ```bash
 pytest
 ```
 
-## Author
+The test suite covers:
 
-Smriti 
+- Valid CSV files
+- Empty CSV files
+- Missing files
+- Missing values
+- Numeric and text column detection
+- Edge cases and invalid inputs
+
+---
+
+## Building Package
+
+Install the build dependency:
+
+```bash
+pip install build
+```
+
+Build the package:
+
+```bash
+python -m build
+```
+
+The generated package files will be available in the `dist/` directory.
+
+---
+
+## Package Configuration
+
+Package metadata and the PyPI description are maintained in:
+
+```text
+package.md
+```
+
+The `pyproject.toml` file references `package.md` as the package's long description.
+
+---
