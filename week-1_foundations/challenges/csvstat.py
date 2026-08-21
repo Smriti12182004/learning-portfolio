@@ -37,9 +37,16 @@ except FileNotFoundError:
 
 
 # Separate header and rows
+if not data:
+    print("Error: CSV file is empty")
+    exit()
+
+if len(data) < 2:
+    print("Error: CSV file must contain a header and at least one row")
+    exit()
+
 headers = [header.strip() for header in data[0]]
 rows = data[1:]
-
 
 # Row and column count
 print("Rows:", len(rows))
